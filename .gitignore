@@ -1,0 +1,44 @@
+# Secrets and credentials
+*.key
+*.pem
+*.env
+.env.*
+secrets/
+credentials/
+
+# API keys and tokens
+**/api-keys.json
+**/tokens.txt
+
+# OS files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# IDE files
+.vscode/
+.idea/
+*.sublime-*
+
+# Temporary files
+*.tmp
+*.temp
+temp/
+tmp/
+
+# Build artifacts
+dist/
+build/
+*.pyc
+__pycache__/
+node_modules/
+
+# Logs
+*.log
+logs/
+
+# Local testing
+test-data/
+local-configs/
