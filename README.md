@@ -53,10 +53,12 @@ mm-ai-knowledge/
 │   ├── references/            # Reference documentation
 │   └── tips/                  # Tips and tricks
 │
-└── templates/                  # Reusable templates
-    ├── projects/              # Project templates
-    ├── documents/             # Document templates
-    └── code/                  # Code templates
+├── templates/                  # Reusable templates
+│   ├── projects/              # Project templates
+│   ├── documents/             # Document templates
+│   └── code/                  # Code templates
+│
+└── example-ai-projects/        # Links to exemplary AI projects and implementations
 ```
 
 ## Getting Started
@@ -170,6 +172,9 @@ Real-world examples, tutorials, and use cases demonstrating how to combine diffe
 
 ### Templates
 Reusable templates for projects, documents, and code that incorporate AI best practices.
+
+### Example AI Projects
+Curated links to exemplary open-source AI projects, implementations, and real-world examples that demonstrate best practices and innovative approaches.
 
 ## Best Practices
 
