@@ -1,12 +1,16 @@
 # Workflows
 
-Multi-step workflows that combine prompts, commands, and agents to accomplish complex tasks.
+**Generic multi-step workflow templates** that combine prompts, commands, and agents to accomplish complex tasks.
+
+## Scope
+
+**This directory is for generic workflow patterns and templates.** For production-ready, domain-specific workflows (e.g., OpenShift PR review automation, JIRA-integrated bug fixing), see specialized repositories like [openshift-eng/ai-helpers](https://github.com/openshift-eng/ai-helpers).
 
 ## Structure
 
-- `development/` - Software development workflows (CI/CD, testing, deployment)
-- `content/` - Content creation and management workflows
-- `automation/` - Task automation and process workflows
+- `development/` - Generic software development workflow templates (CI/CD patterns, testing approaches, deployment concepts)
+- `content/` - Content creation and management workflow examples
+- `automation/` - Generic task automation and process workflow patterns
 
 ## What is a Workflow?
 
@@ -63,11 +67,25 @@ cp workflows/development/pr-review-workflow.yaml .claude/workflows/
 
 ## Creating Workflows
 
-1. **Define Clear Steps**: Each step should have a specific purpose
-2. **Handle Dependencies**: Specify which steps depend on others
-3. **Consider Parallelization**: Run independent steps in parallel
-4. **Add Error Handling**: Define what happens if a step fails
-5. **Document Inputs/Outputs**: Clearly specify data flow
+1. **Keep It Generic**: Workflows should be adaptable to different projects and domains
+2. **Define Clear Steps**: Each step should have a specific purpose
+3. **Handle Dependencies**: Specify which steps depend on others
+4. **Consider Parallelization**: Run independent steps in parallel
+5. **Add Error Handling**: Define what happens if a step fails
+6. **Document Inputs/Outputs**: Clearly specify data flow
+7. **Use Placeholders**: Avoid hardcoding specific tools, APIs, or services
+
+### Examples of Appropriate Workflows
+
+✅ **Good (Generic Templates):**
+- PR review workflow pattern (analyze → test → review → summarize)
+- Documentation generation workflow template
+- Generic CI/CD pipeline structure
+
+❌ **Not Appropriate (Domain-Specific):**
+- OpenShift bug fix workflow with JIRA integration
+- Specific Gangway job triggering workflow
+- Production OLM operator installation workflow
 
 ## Workflow Components
 

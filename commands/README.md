@@ -1,12 +1,16 @@
 # Commands
 
-This directory contains slash commands for various AI-assisted development tools.
+This directory contains **generic, educational examples** of slash commands for various AI-assisted development tools.
+
+## Scope
+
+**This directory is for generic command templates and examples.** For production-ready, domain-specific commands (e.g., OpenShift, JIRA integration, CI/CD automation), see specialized repositories like [openshift-eng/ai-helpers](https://github.com/openshift-eng/ai-helpers).
 
 ## Structure
 
-- `claude-code/` - Commands for Claude Code (`.md` format)
-- `cursor/` - Commands for Cursor IDE
-- `general/` - Tool-agnostic commands
+- `claude-code/` - Generic command examples for Claude Code (`.md` format)
+- `cursor/` - Generic command examples for Cursor IDE
+- `general/` - Tool-agnostic command templates
 
 ## Claude Code Commands
 
@@ -36,10 +40,24 @@ cp commands/claude-code/your-command.md /path/to/project/.claude/commands/
 
 ## Creating New Commands
 
-1. **Be Specific**: Commands should have a clear, single purpose
-2. **Add Context**: Explain what the command should do
-3. **Include Examples**: Show expected input/output when relevant
-4. **Test First**: Verify the command works before contributing
+1. **Keep It Generic**: Commands should be applicable across projects and domains
+2. **Focus on Education**: Provide templates and examples, not production code
+3. **Be Specific**: Commands should have a clear, single purpose
+4. **Add Context**: Explain what the command should do
+5. **Include Examples**: Show expected input/output when relevant
+6. **Avoid Tight Coupling**: Don't integrate with specific APIs or services (use examples instead)
+
+### Examples of Appropriate Commands
+
+✅ **Good (Generic):**
+- `/refactor-function` - Template for requesting code refactoring
+- `/explain-code` - Generic code explanation prompt
+- `/generate-tests` - Template for test generation requests
+
+❌ **Not Appropriate (Domain-Specific):**
+- `/jira:create-bug` - JIRA API integration (better for ai-helpers)
+- `/deploy-to-staging` - Environment-specific deployment
+- `/trigger-ci-job` - Specific CI system integration
 
 ## Naming Convention
 

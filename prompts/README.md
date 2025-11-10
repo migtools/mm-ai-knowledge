@@ -1,11 +1,15 @@
 # Prompts
 
-This directory contains reusable prompts and prompt templates for various AI tools and tasks.
+This directory contains **generic, reusable prompts and prompt templates** for various AI tools and tasks.
+
+## Scope
+
+**This directory is for general-purpose prompt templates** that can be adapted to any domain. For domain-specific prompts (e.g., OpenShift debugging workflows, JIRA triage patterns), see specialized repositories like [openshift-eng/ai-helpers](https://github.com/openshift-eng/ai-helpers).
 
 ## Structure
 
-- `system/` - System-level prompts that define AI behavior and personality
-- `task-specific/` - Prompts optimized for specific tasks (coding, writing, analysis, etc.)
+- `system/` - Generic system-level prompts that define AI behavior and personality
+- `task-specific/` - Generic prompts optimized for common tasks (coding, writing, analysis, etc.)
 - `examples/` - Example prompts with detailed use cases and explanations
 
 ## How to Use
@@ -44,6 +48,19 @@ Brief description of what this prompt does
 
 - Use descriptive names: `{task}-{type}-prompt.md`
 - Examples: `code-review-prompt.md`, `technical-writing-prompt.md`
+
+### Examples of Appropriate Prompts
+
+✅ **Good (Generic):**
+- Generic code review prompt template
+- Technical documentation writing guide
+- Test case generation prompt
+- Refactoring assistance prompt
+
+❌ **Not Appropriate (Domain-Specific):**
+- OpenShift upgrade path analysis prompt
+- JIRA bug report formatting prompt
+- Must-gather data interpretation prompt
 
 ## Examples
 

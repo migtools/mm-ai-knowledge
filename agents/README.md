@@ -1,12 +1,16 @@
 # Agents
 
-This directory contains agent configurations and definitions for autonomous task handling.
+This directory contains **generic agent configuration templates and examples** for autonomous task handling.
+
+## Scope
+
+**This directory is for educational templates and generic patterns.** For production-ready, domain-specific agents (e.g., OpenShift debugging, JIRA automation), see specialized repositories like [openshift-eng/ai-helpers](https://github.com/openshift-eng/ai-helpers).
 
 ## Structure
 
-- `specialized/` - Domain-specific agents (code-reviewer, tester, documentation writer, etc.)
-- `workflows/` - Multi-agent workflow configurations
-- `templates/` - Reusable agent templates
+- `specialized/` - Generic agent templates (code-reviewer, tester, documentation writer, etc.)
+- `workflows/` - Multi-agent workflow configuration examples
+- `templates/` - Reusable, generic agent templates
 
 ## What is an Agent?
 
@@ -55,9 +59,21 @@ Agents are typically referenced in:
 Include:
 1. **Clear Name**: Descriptive agent name
 2. **Purpose**: What the agent does
-3. **Configuration**: Complete configuration file
+3. **Configuration**: Complete configuration file (template form)
 4. **Usage Example**: How to use the agent
-5. **Dependencies**: Any required tools or APIs
+5. **Keep It Generic**: Avoid tight coupling to specific APIs, services, or organizations
+
+### Examples of Appropriate Agents
+
+✅ **Good (Generic Templates):**
+- Code review agent template with common review patterns
+- Test generator agent with generic testing principles
+- Documentation writer agent with standard doc formats
+
+❌ **Not Appropriate (Domain-Specific):**
+- JIRA bug triage agent (better for ai-helpers)
+- OpenShift cluster health monitor agent
+- AWS deployment automation agent
 
 ## Best Practices
 
